@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: #f9eeff;
+  padding: 8em 1.5em;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 2em;
+  border-radius: 1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+ul.faq,
+ul.faq li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1 {
+  color: #331537;
+}
+
+ul.faq button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  color: #331537;
+  font-size: 1.1em;
+}
+
+
+ul.faq button:hover,
+ul.faq button:focus {
+  padding: 2px 6px;
+  border: 2px solid #005a9c;
+  cursor: pointer;
+}
+
+.desc {
+  color: rgba(51.0, 21.0, 55.0, .8);
+}
