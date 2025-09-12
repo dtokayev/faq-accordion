@@ -73,8 +73,7 @@ ul.faq button {
 
 ul.faq button:hover,
 ul.faq button:focus {
-  padding: 2px 6px;
-  border: 2px solid #005a9c;
+  color: #ad28eb;
   cursor: pointer;
 }
 
