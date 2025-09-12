@@ -20,6 +20,7 @@ body {
   background-size: contain;
   padding: 9em 1.5em;
   font-family: "Work Sans", sans-serif;
+  min-height: calc(100vh - 18em);
 }
 
 .card {
@@ -92,4 +93,8 @@ li + li {
 
 li + li > button {
   margin-top: 1.3em;
+}
+
+button[aria-expanded="true"] > img {
+  content: url("../assets/images/icon-minus.svg");
 }
