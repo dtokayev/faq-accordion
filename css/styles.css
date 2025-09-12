@@ -36,11 +36,22 @@ ul.faq {
   list-style: none;
 }
 
+.faq-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+  gap: 1.4em;
+}
+
+.faq-title > img {
+  height: 1.6em;
+}
+
 h1 {
   color: var(--purple-950);
   font-weight: 700;
   font-size: 2em;
-  margin-top: 0;
+  margin: 0;
 }
 
 ul.faq button {
@@ -52,6 +63,11 @@ ul.faq button {
   font-size: 1em;
   font-weight: 600;
   text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
 }
 
 
@@ -76,5 +92,5 @@ li + li {
 }
 
 li + li > button {
-  margin-top: 1.6em;
+  margin-top: 1.3em;
 }
