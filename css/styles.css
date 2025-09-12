@@ -1,38 +1,57 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url("../assets/fonts/WorkSans-VariableFont_wght.ttf");
+}
+
+:root {
+  --white: hsl(0, 100%, 100%);
+  --purple-100: hsl(275, 100%, 97%);
+  --purple-600: hsl(292, 16%, 49%);
+  --purple-950: hsl(292, 42%, 14%);
+}
+
 body {
   margin: 0;
 }
 
 .container {
-  background-color: #f9eeff;
-  padding: 8em 1.5em;
+  background: no-repeat url("../assets/images/background-pattern-mobile.svg"),
+              var(--purple-100);
+  background-size: contain;
+  padding: 9em 1.5em;
+  font-family: "Work Sans", sans-serif;
 }
 
 .card {
-  background-color: #ffffff;
-  padding: 2em;
-  border-radius: 1em;
+  background-color: var(--white);
+  padding: 1.5em;
+  border-radius: .5em;
   max-width: 600px;
   margin: 0 auto;
 }
 
-ul.faq,
-ul.faq li {
+ul.faq {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 h1 {
-  color: #331537;
+  color: var(--purple-950);
+  font-weight: 700;
+  font-size: 2em;
+  margin-top: 0;
 }
 
 ul.faq button {
+  font-family: "Work Sans", sans-serif;
   padding: 0;
   border: none;
   background-color: transparent;
-  font-weight: bold;
-  color: #331537;
-  font-size: 1.1em;
+  color: var(--purple-950);
+  font-size: 1em;
+  font-weight: 600;
+  text-align: left;
 }
 
 
@@ -44,5 +63,18 @@ ul.faq button:focus {
 }
 
 .desc {
-  color: rgba(51.0, 21.0, 55.0, .8);
+  color: var(--purple-600);
+  font-weight: 400;
+  font-size: .88em;
+  line-height: 1.5em;
+  margin-top: 1.7em;
+}
+
+li + li {
+  border-top: 1px solid hsla(292, 16%, 49%, .1);
+  margin-top: 1.3em;
+}
+
+li + li > button {
+  margin-top: 1.6em;
 }
