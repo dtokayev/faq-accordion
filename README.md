@@ -17,10 +17,10 @@ Users should be able to:
 ### Screenshots
 
 [<img src="./screenshots/screenshot-desktop.png" width="450">](./screenshots/screenshot-desktop.png)
-[<img src="./screenshots/screenshot-desktop.png" width="450">](./screenshots/screenshot-desktop-active.png)
+[<img src="./screenshots/screenshot-desktop-active.png" width="450">](./screenshots/screenshot-desktop-active.png)
 <br/><br/>
 [<img src="./screenshots/screenshot-mobile.png" width="200">](./screenshots/screenshot-mobile.png)
-[<img src="./screenshots/screenshot-mobile.png" width="200">](./screenshots/screenshot-mobile-active.png)
+[<img src="./screenshots/screenshot-mobile-active.png" width="200">](./screenshots/screenshot-mobile-active.png)
 
 ## My process
 
