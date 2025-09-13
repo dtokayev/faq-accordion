@@ -27,8 +27,10 @@ body {
   background-color: var(--white);
   padding: 1.5em;
   border-radius: .5em;
-  max-width: 600px;
+  max-width: calc(600px - 5em);
   margin: 0 auto;
+  transition: padding .3s ease-in-out,
+              border-radius .3s ease-in-out;
 }
 
 ul.faq {
@@ -40,18 +42,18 @@ ul.faq {
 .faq-title {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5em;
+  margin-bottom: clamp(1.5em, 4vw, 1.9em);
   gap: 1.4em;
 }
 
 .faq-title > img {
-  height: 1.6em;
+  height: clamp(1.6em, 5vw, 2.6em);
 }
 
 h1 {
   color: var(--purple-950);
   font-weight: 700;
-  font-size: 2em;
+  font-size: clamp(2em, 7vw, 3.5em);
   margin: 0;
 }
 
@@ -61,7 +63,7 @@ ul.faq button {
   border: none;
   background-color: transparent;
   color: var(--purple-950);
-  font-size: 1em;
+  font-size: clamp(1em, 2.5vw, 1.12em);
   font-weight: 600;
   text-align: left;
   width: 100%;
@@ -81,14 +83,14 @@ ul.faq button:focus {
 .desc {
   color: var(--purple-600);
   font-weight: 400;
-  font-size: .88em;
+  font-size: clamp(.88em, 2vw, 1em);
   line-height: 1.5em;
   margin-top: 1.7em;
 }
 
 li + li {
   border-top: 1px solid hsla(292, 16%, 49%, .1);
-  margin-top: 1.3em;
+  margin-top: clamp(1.3em, 3vw, 1.46em);
 }
 
 li + li > button {
@@ -97,4 +99,16 @@ li + li > button {
 
 button[aria-expanded="true"] > img {
   content: url("../assets/images/icon-minus.svg");
+}
+
+@media only screen and (min-width: 500px) {
+  .container {
+    background: no-repeat url("../assets/images/background-pattern-desktop.svg"),
+                var(--purple-100);
+  }
+
+  .card {
+    padding: 2.5em;
+    border-radius: 1em;
+  }
 }
